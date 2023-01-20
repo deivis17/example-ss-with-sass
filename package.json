@@ -1,0 +1,20 @@
+{
+  "name": "example-ss-with-sass",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deivis17/example-ss-with-sass.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/deivis17/example-ss-with-sass/issues"
+  },
+  "homepage": "https://github.com/deivis17/example-ss-with-sass#readme"
+}
