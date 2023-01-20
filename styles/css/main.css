@@ -46,6 +46,12 @@ i {
   background-color: rgba(107, 100, 100, 0.6);
 }
 
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0.8rem 1rem;
+}
+
 .nav-main {
   display: flex;
   justify-content: space-between;
@@ -117,5 +123,6 @@ i {
 .showcase {
   background: url("https://picsum.photos/1000/500") no-repeat center center/cover;
   height: 300px;
+  width: 100%;
   padding: 9rem;
 }/*# sourceMappingURL=main.css.map */
