@@ -36,6 +36,12 @@ i {
   margin-left: 2rem;
 }
 
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 5px;
+}
+
 .btn {
   display: inline-block;
   margin: 0.7rem 0;
@@ -52,66 +58,88 @@ i {
   margin: 0.8rem 1rem;
 }
 
-.nav-main {
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  margin: 0;
+  border-bottom: 1px solid rgb(255, 254, 254);
+}
+.sticky .nav-main {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 60px;
   width: 100%;
+  background-color: rgb(1, 1, 1);
+  padding: 0 0 0 0.3rem;
 }
-.nav-main .logo-brand {
+.sticky .nav-main .logo-brand {
   width: 50px;
   border-radius: 100%;
 }
-.nav-main .nav-right {
+.sticky .nav-main .nav-right {
   display: flex;
 }
-.nav-main .nav-right li:hover {
+.sticky .nav-main .nav-right li:hover {
   cursor: pointer;
 }
-.nav-main .nav-right:nth-child(2) {
+.sticky .nav-main .nav-right:nth-child(2) {
   margin-left: 0.7rem;
 }
 @media (max-width: 640px) {
-  .nav-main .nav-right i {
+  .sticky .nav-main .nav-right i {
     font-size: 1.7rem;
   }
 }
-.nav-main .nav-right li i {
+.sticky .nav-main .nav-right li i {
   font-size: 1rem;
   margin-left: 0.9rem;
   margin-right: 0.5rem;
 }
-.nav-main .nav-menu {
+.sticky .nav-main .nav-menu {
   display: flex;
   flex: 1;
   margin-left: auto;
 }
 @media (max-width: 640px) {
-  .nav-main .nav-menu {
+  .sticky .nav-main .nav-menu {
     display: none;
   }
 }
-.nav-main .nav-menu li {
+.sticky .nav-main .nav-menu li {
   margin-left: 2rem;
 }
-.nav-main .nav-menu a {
+.sticky .nav-main .nav-menu a {
   display: block;
   background-color: rgb(107, 100, 100);
   padding: 10px 20px;
 }
-.nav-main .nav-menu a:hover {
+.sticky .nav-main .nav-menu a:hover {
   background-color: rgba(107, 100, 100, 0.6);
+}
+
+.sticky-main {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
 .min-menu {
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 10;
   transform: translate(-40rem);
   background-color: rgb(107, 100, 100);
   padding: 1.2rem;
   min-height: 100vh;
+  width: 6rem;
+}
+.min-menu .nav-menu li {
+  margin-left: 1rem;
 }
 
 .show {
